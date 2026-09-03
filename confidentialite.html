@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Politique de confidentialité — Paceline</title>
+<meta name="description" content="Quelles données les automatisations Paceline traitent, pourquoi, combien de temps, et comment révoquer les accès.">
+<style>
+  :root{
+    --ink:#211E18;
+    --body:#4A453B;
+    --muted:#7C7567;
+    --accent:#9E4E2C;
+    --rule:#D7C9AF;
+    --paper:#FBFAF8;
+    --flag:#FDF3E7;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--body);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size:17px;
+    line-height:1.65;
+  }
+  .wrap{max-width:660px;margin:0 auto;padding:64px 24px 80px}
+  .rail{
+    width:3px;height:56px;border-radius:2px;
+    background:linear-gradient(to bottom,
+      #f0a07e,#ebb26d,#e4c260,#dac167,#c7c076,#b5bf85,
+      #9cbe9c,#98bdae,#95bdbf,#91bcd0,#97b9d7,#acb3ce,
+      #c2acc4,#d7a5ba,#e2a2b5);
+    margin-bottom:24px;
+  }
+  h1{font-size:28px;line-height:1.25;font-weight:700;letter-spacing:-.3px;color:var(--ink);margin:0 0 6px}
+  .updated{font-size:14px;color:var(--muted);margin:0 0 36px}
+  h2{font-size:18px;font-weight:700;color:var(--ink);margin:38px 0 10px}
+  h3{font-size:15px;font-weight:700;color:var(--ink);margin:24px 0 8px}
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px;padding-left:20px}
+  li{margin-bottom:7px}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid rgba(158,78,44,.3)}
+  a:hover{border-bottom-color:var(--accent)}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+  table{width:100%;border-collapse:collapse;margin:0 0 18px;font-size:15px}
+  th,td{text-align:left;padding:9px 10px 9px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+  th{color:var(--ink);font-weight:700;width:34%}
+  .todo{
+    background:var(--flag);
+    border-left:3px solid var(--accent);
+    padding:12px 16px;
+    margin:0 0 20px;
+    font-size:15px;
+  }
+  hr{border:0;border-top:1px solid var(--rule);margin:38px 0 26px}
+  footer{margin-top:44px;font-size:14px;color:var(--muted)}
+  @media (max-width:600px){
+    .wrap{padding:44px 20px 64px}
+    h1{font-size:24px}
+    th{width:100%;display:block;border:0;padding-bottom:0}
+    td{display:block;padding-top:2px}
+  }
+</style>
+</head>
+<body>
+<main class="wrap">
+
+  <div class="rail" aria-hidden="true"></div>
+
+  <h1>Politique de confidentialité</h1>
+  <p class="updated">Dernière mise à jour : 3 septembre 2026</p>
+
+  <div class="todo">
+    <strong>À compléter avant publication :</strong> remplacez les mentions entre crochets par vos informations réelles (statut juridique, SIRET, adresse), puis supprimez ce bloc et sa classe <code>.todo</code> dans le CSS.
+  </div>
+
+  <h2>1. Qui traite vos données</h2>
+  <p>
+    Morgane Schwerdtle, exerçant sous le nom commercial <strong>Paceline</strong>.<br>
+    Statut : [statut juridique] — SIRET : [numéro SIRET]<br>
+    Adresse : [adresse postale]<br>
+    Contact : <a href="mailto:morgane@paceline.fr">morgane@paceline.fr</a> — 06 34 07 92 09
+  </p>
+
+  <h2>2. À qui s'adresse cette politique</h2>
+  <p>Elle s'adresse aux entreprises clientes qui autorisent une automatisation Paceline à se connecter à leurs comptes Google, ainsi qu'aux personnes dont les données transitent par ces automatisations (prospects et clients de nos clients).</p>
+
+  <h2>3. Données Google auxquelles l'application accède</h2>
+  <p>L'application n'accède à un compte Google qu'après autorisation explicite de son titulaire, via l'écran de consentement Google.</p>
+
+  <table>
+    <tr>
+      <th>Gmail</th>
+      <td>Lecture des messages entrants pour détecter les demandes commerciales à traiter. Marquage comme lu des messages traités. <strong>Aucun message n'est supprimé.</strong></td>
+    </tr>
+    <tr>
+      <th>Google Agenda</th>
+      <td>Création et déplacement d'événements de rappel dans l'agenda désigné par le client.</td>
+    </tr>
+    <tr>
+      <th>Google Sheets</th>
+      <td>Lecture et écriture dans le fichier CRM désigné par le client, et dans ce fichier uniquement.</td>
+    </tr>
+  </table>
+
+  <h2>4. Pourquoi ces données sont traitées</h2>
+  <ul>
+    <li>Enregistrer automatiquement une demande entrante dans le CRM du client</li>
+    <li>Envoyer une réponse automatique au prospect depuis l'adresse du client</li>
+    <li>Programmer et faire remonter les rappels de relance</li>
+    <li>Déclencher une demande d'avis après une prestation</li>
+  </ul>
+  <p><strong>Base légale :</strong> exécution du contrat de prestation conclu avec l'entreprise cliente, et intérêt légitime de celle-ci à gérer sa relation commerciale.</p>
+
+  <h2>5. Où les données sont hébergées</h2>
+  <p>Le moteur d'automatisation est auto-hébergé sur un serveur situé dans l'Union européenne [à confirmer auprès de l'hébergeur]. Les données commerciales restent dans le compte Google du client : Paceline ne constitue aucune base de données parallèle.</p>
+
+  <h2>6. Sous-traitants</h2>
+  <p>Le contenu des messages entrants est transmis à un service d'intelligence artificielle tiers, <strong>Anthropic (API Claude)</strong>, à seule fin d'en extraire les informations structurées (nom, date, nombre de personnes, coordonnées). Cette transmission est limitée au contenu du message concerné et n'est pas utilisée pour entraîner de modèle.</p>
+  <p>Les autres sous-traitants sont les fournisseurs d'infrastructure : Google (comptes du client) et l'hébergeur du serveur d'automatisation.</p>
+  <p>Aucune donnée n'est vendue, louée, ni transmise à des fins publicitaires.</p>
+
+  <h2>7. Durée de conservation</h2>
+  <ul>
+    <li><strong>Journaux d'exécution</strong> du moteur d'automatisation : conservés au maximum [30] jours, puis supprimés automatiquement</li>
+    <li><strong>Données commerciales</strong> (CRM, agenda, messages) : conservées dans le compte Google du client, sous sa responsabilité et selon sa propre politique</li>
+    <li><strong>Fin de contrat</strong> : les accès sont révoqués et les journaux supprimés sous 30 jours</li>
+  </ul>
+
+  <h2>8. Révoquer l'accès à tout moment</h2>
+  <p>Le titulaire du compte Google peut retirer son autorisation quand il le souhaite depuis <a href="https://myaccount.google.com/permissions" rel="noopener">myaccount.google.com/permissions</a>. L'automatisation cesse alors immédiatement d'accéder au compte. Aucune donnée déjà écrite dans le CRM ou l'agenda du client n'est affectée.</p>
+
+  <h2>9. Vos droits</h2>
+  <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification, d'effacement, de limitation, d'opposition et de portabilité sur vos données. Écrivez à <a href="mailto:morgane@paceline.fr">morgane@paceline.fr</a> : une réponse vous sera apportée sous un mois.</p>
+  <p>Vous pouvez également introduire une réclamation auprès de la CNIL — <a href="https://www.cnil.fr" rel="noopener">cnil.fr</a>.</p>
+
+  <h2>10. Sécurité</h2>
+  <ul>
+    <li>Connexions chiffrées (TLS) vers l'ensemble des services</li>
+    <li>Identifiants stockés chiffrés dans le moteur d'automatisation, jamais en clair</li>
+    <li>Une autorisation distincte par client — aucun accès croisé entre clients</li>
+    <li>Portée d'accès limitée aux fichiers et agendas explicitement partagés</li>
+  </ul>
+
+  <h2>11. Conformité à la politique Google</h2>
+  <p>L'utilisation par Paceline des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy" rel="noopener">Google API Services User Data Policy</a>, y compris ses exigences d'utilisation limitée (<em>Limited Use</em>).</p>
+
+  <h2>12. Modifications</h2>
+  <p>Toute évolution de cette politique sera publiée sur cette page, avec mise à jour de la date en tête de document. Les clients concernés en seront informés par courriel.</p>
+
+  <hr>
+
+  <footer>
+    <a href="index.html">Retour à l'accueil</a> — Paceline, Morgane Schwerdtle
+  </footer>
+
+</main>
+</body>
+</html>
